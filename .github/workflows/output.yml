@@ -15,6 +15,6 @@ jobs:
           echo "GITHUB_SHA: ${{ github.sha }}"
           echo "GITHUB_RUN_ID: ${{ github.run_id }}"
           echo "GITHUB_RUN_NUMBER: ${{ github.run_number }}"
-        
+              
       - name: output json github context
-        run: echo "${{ toJson(github) }}""
+        run: echo "${{ toJson(github) }}"
