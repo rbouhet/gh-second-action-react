@@ -17,4 +17,4 @@ jobs:
           echo "GITHUB_RUN_NUMBER: ${{ github.run_number }}"
         
       - name: output json github context
-        run: echo ${{ toJson(github) }}
+        run: echo "${{ toJson(github) }}""
